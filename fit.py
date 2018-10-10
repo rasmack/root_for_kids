@@ -3,7 +3,7 @@ from histogram import histo
 
 
 
-# Fitter normalfordeling + lineaer baggrund
+# Fitting gaussian + linear background
 h=histo(100,0,10)
 for i in range(0,1000):
     h.fill(linbg(0,10,-1.1,15))
@@ -17,7 +17,7 @@ print hist.fit("norm+p1",True)
 
 
 
-# Fitter eksponentiel kurve
+# Fitting exponential
 h=histo(100,0,10)
 data=[]
 c=800
@@ -28,7 +28,7 @@ h.computeerrors()
 print h.fit("exp",True)["prob"]
 
 
-# Demonstrerer central limit theorem
+# Demonstrating central limit theorem
 h=histo(10,2,7)
 for i in range(0,1000):
     h.fill(

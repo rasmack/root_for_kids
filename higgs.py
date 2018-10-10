@@ -28,10 +28,10 @@ for event in events:
             h.fill(math.sqrt(E*E-p2))
 
 if smeared:
-    # Fitter til Gauss
+    # Fitting Gauss
     fitres=h.fit("norm",True)
 else:
-    # Fitter til Breit-Wigner
+    # Fitting Breit-Wigner
     fitres=h.fit("resonans",True)
 
 print fitres["prob"]

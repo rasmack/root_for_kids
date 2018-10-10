@@ -25,5 +25,5 @@ print h_pt.fit("exp",True)["prob"]
 h_spec.plot()
 fitres=h_m.fit("norm",True)
 print "Fit probability:", fitres["prob"]
-print "Fittet masse: ", fitres["parameters"][1], " (Tabelvaerdi: 3.096916 GeV)"
+print "Fitted mass: ", fitres["parameters"][1], " (Table value: 3.096916 GeV)"
 
